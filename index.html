@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <title>Wine Shop</title>
+</head>
+
+<body>
+  <h1 class="text-center">Wine Shop</h1>
+  <h6 class="text-center">Wineshop.com</h6>
+  <div class="colsm12">
+    <div class="row pl-5 pr-5">
+      <div class="col-sm-4 pt-3 button-group pb-3 shadow">
+        <div class="d-flex">
+          <button id="btn-filter" class="btn" data-filter="*">Show All</button>
+          <button id="btn-filter" data-filter="*" class="btn ml-auto">Show me</button>
+        </div>
+        <div class="d-flex">
+          <button id="btn-filter" data-filter=".white" class="btn">White</button>
+          <button id="btn-filter" data-filter=".red" class="btn ml-auto">Red</button>
+          <button class="btn ml-auto" id="btn-filter" data-filter=".sparkling">Sparkling</button>
+        </div>
+        <div class="d-flex">
+          <button class="btn">Order by</button>
+          <button class="btn ml-auto">Price</button>
+          <button class="btn ml-auto" id="btn-filter" class="btn" data-filter=".vintage">Vintage</button>
+        </div>
+      </div>
+      <div class="col-sm-8 ml-auto">
+        <div class="row">
+          <div class="col-sm-3 shadow">
+            <h4>Delivery Info</h4>
+          </div>
+          <div class="col-sm-3 shadow">
+            <div class="d-block">
+              <h1 class="cart-items">0</h1>
+              <h2>Bottles</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 pt-3 shadow">
+            <div class="d-block pl-2 pr-2">
+              <div class="d-flex">
+                <h3>
+                  KSH
+                  <h3 class="cart-total ml-2">0.0</h3>
+                </h3>
+                <button class="btn ml-auto bg-dark cart-btn text-white">
+                  View Cart <i class=" mr-2 fas fa-shopping-cart"></i>
+                </button>
+              </div>
+              <hr />
+              <div class="d-flex">
+                <span>Your order is will be processed</span>
+                <button class="btn ml-auto">Checkout</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+
+        <h2>Your cart</h2>
+        <hr>
+        <div class="cart-content">
+          <!-----------CART ITEM-->
+
+        </div>
+        <div class="cart-footer">
+          <h3 class="cart-total"> 0</h3>
+          <button class="clear-cart btn btn-warning text-white banner-btn">clear cart</button>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!---------------Products---------------------->
+  <section>
+    <div class="pl-5 pr-5">
+      <div class="mt-5">
+        <div class="">
+          <!---------------Single Products---------------------->
+          <div class="row product-center">
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/isotope.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
