@@ -202,7 +202,7 @@ Cart
 }
 @media screen and (max-width:700px){
     .colsm12 .row .col-sm-3 {
-        min-width: 320px;
+        min-width: 280px;
         margin-top: 20px;
         margin-bottom: 20px
 
@@ -220,7 +220,7 @@ Cart
         font-size: 11px;
     }
 }
-@media screen and (max-width:372px){
+@media screen and (max-width:382px){
     .colsm12 .row .col-sm-4 button {
        min-width: 70px;
     }
