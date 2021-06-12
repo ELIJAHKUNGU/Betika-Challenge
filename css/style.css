@@ -224,6 +224,10 @@ Cart
     .colsm12 .row .col-sm-4 button {
        min-width: 70px;
     }
+    .colsm12 .row .col-sm-4{
+        max-width: 400px;
+
+    }
 
 }
     
