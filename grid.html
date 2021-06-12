@@ -68,7 +68,7 @@
     </div>
     <script>
         const clearCartBtn = document.querySelector('.clear-btn');
-        clearCartBtn.addEventListener('click',function(){
+        clearCartBtn.addEventListener('click', function () {
             alert('hello ');
         })
 
@@ -77,127 +77,83 @@
     <section>
         <div class="pl-5 pr-5">
             <div class="mt-5">
-                <div class="row  product-center">
-                    <!---------------Single Products---------------------->
-                    <div class="grid">
-                        <div class="col-sm-4">
-                            <div class="grid-item white red  shadow">
-                                <div class="d-flex">
-                                    <div class="product-image">
-                                        <img src="${product.image}" alt="" class="img-fluid" />
+                <div id="filters" class="button-group text-right">
+                    <button class="btn" data-filter="*">All Brands</button>
+                    <button class="btn" data-filter=".Apple">Apple</button>
+                    <button class="btn" data-filter=".Samsung">Samsung</button>
+                    <button class="btn" data-filter=".Redmi">Redmi</button>
+                </div>
+                <div class="grid">
+                    <div class="grid-item Apple border">
+                       <div class="item py-4" style="width: 200px;">
+                        <div class="d-flex">
+                            <div class="product-image">
+                                <img src="${product.image}" alt="" class="img-fluid" />
+                            </div>
+                            <div class="product-info ml-2">
+                                <div class="title">
+                                    <h2>${product.no}</h2>
+                                    <h5>${product.name}</h5>
+                                </div>
+                                <div class="d-flex product-price">
+                                    <div class="d-block pr-2 bottle">
+                                        <h6>Bottle</h6>
+                                        <span>Ksh <br>${product.bottle} <br></span>
+
                                     </div>
-                                    <div class="product-info ml-2">
-                                        <div class="title">
-                                            <h2>${product.no}</h2>
-                                            <h5>$red</h5>
-                                        </div>
-                                        <div class="d-flex product-price">
-                                            <div class="d-block pr-2 bottle">
-                                                <h6>Bottle</h6>
-                                                <span>Ksh <br>${product.bottle} <br></span>
-                                                <div class="d-flex myinput">
-                                                    <input type="text" class="form-control" />
-                                                    <span class="px-1">QTY</span>
-                                                </div>
-                                            </div>
-                                            <div class="d-block pl-2 case">
-                                                <h6>Case</h6>
-                                                <span>Ksh<br> ${product.bottle} </span>
-                                                <div class="d-flex myinput">
-                                                    <input type="text" class="form-control" />
-                                                    <span class="px-1">QTY</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex mybutton">
-                                            <button class="btn mt-2 btn-dark text-white mr-2">
-                                                Details
-                                            </button>
-                                            <button data-id=${product.no} class="btn cart-btn ml-auto mt-2 cart">Add To
-                                                Cart</button>
-                                        </div>
+                                    <div class="d-block pl-2 case">
+                                        <h6>Case</h6>
+                                        <span>Ksh<br>0.0</span>
+
                                     </div>
                                 </div>
-                            </div>
-                            <div class="grid-item red  shadow">
-                                <div class="d-flex">
-                                    <div class="product-image">
-                                        <img src="${product.image}" alt="" class="img-fluid" />
-                                    </div>
-                                    <div class="product-info ml-2">
-                                        <div class="title">
-                                            <h2>${product.no}</h2>
-                                            <h5>${product.name}</h5>
-                                        </div>
-                                        <div class="d-flex product-price">
-                                            <div class="d-block pr-2 bottle">
-                                                <h6>Bottle</h6>
-                                                <span>Ksh <br>${product.bottle} <br></span>
-                                                <div class="d-flex myinput">
-                                                    <input type="text" class="form-control" />
-                                                    <span class="px-1">QTY</span>
-                                                </div>
-                                            </div>
-                                            <div class="d-block pl-2 case">
-                                                <h6>Case</h6>
-                                                <span>Ksh<br> ${product.bottle} </span>
-                                                <div class="d-flex myinput">
-                                                    <input type="text" class="form-control" />
-                                                    <span class="px-1">QTY</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex mybutton">
-                                            <button class="btn mt-2 btn-dark text-white mr-2">
-                                                Details
-                                            </button>
-                                            <button data-id=${product.no} class="btn cart-btn ml-auto mt-2 cart">Add To
-                                                Cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item sparkling  shadow">
-                                <div class="d-flex">
-                                    <div class="product-image">
-                                        <img src="${product.image}" alt="" class="img-fluid" />
-                                    </div>
-                                    <div class="product-info ml-2">
-                                        <div class="title">
-                                            <h2>${product.no}</h2>
-                                            <h5>${product.name}</h5>
-                                        </div>
-                                        <div class="d-flex product-price">
-                                            <div class="d-block pr-2 bottle">
-                                                <h6>Bottle</h6>
-                                                <span>Ksh <br>${product.bottle} <br></span>
-                                                <div class="d-flex myinput">
-                                                    <input type="text" class="form-control" />
-                                                    <span class="px-1">QTY</span>
-                                                </div>
-                                            </div>
-                                            <div class="d-block pl-2 case">
-                                                <h6>Case</h6>
-                                                <span>Ksh<br> ${product.bottle} </span>
-                                                <div class="d-flex myinput">
-                                                    <input type="text" class="form-control" />
-                                                    <span class="px-1">QTY</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex mybutton">
-                                            <button class="btn mt-2 btn-dark text-white mr-2">
-                                                Details
-                                            </button>
-                                            <button data-id=${product.no} class="btn cart-btn ml-auto mt-2 cart">Add To
-                                                Cart</button>
-                                        </div>
-                                    </div>
+                                <div class="d-flex mybutton">
+                                    <button class="btn mt-2 btn-dark text-white mr-2">
+                                        Details
+                                    </button>
+                                    <button data-id=${product.no} class="btn cart-btn-banner ml-auto mt-2 ">Add
+                                        Cart</button>
                                 </div>
                             </div>
                         </div>
+                       </div>
                     </div>
+                    <div class="grid-item Apple border">
+                        <div class="item py-4" style="width: 200px;">
+                         <div class="d-flex">
+                             <div class="product-image">
+                                 <img src="${product.image}" alt="" class="img-fluid" />
+                             </div>
+                             <div class="product-info ml-2">
+                                 <div class="title">
+                                     <h2>${product.no}</h2>
+                                     <h5>${product.name}</h5>
+                                 </div>
+                                 <div class="d-flex product-price">
+                                     <div class="d-block pr-2 bottle">
+                                         <h6>Bottle</h6>
+                                         <span>Ksh <br>${product.bottle} <br></span>
+ 
+                                     </div>
+                                     <div class="d-block pl-2 case">
+                                         <h6>Case</h6>
+                                         <span>Ksh<br>0.0</span>
+ 
+                                     </div>
+                                 </div>
+                                 <div class="d-flex mybutton">
+                                     <button class="btn mt-2 btn-dark text-white mr-2">
+                                         Details
+                                     </button>
+                                     <button data-id=${product.no} class="btn cart-btn-banner ml-auto mt-2 ">Add
+                                         Cart</button>
+                                 </div>
+                             </div>
+                         </div>
+                        </div>
+                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -252,7 +208,7 @@
             $grid.isotope({ filter: filterValue });
         })
     </script>
-   
+
 </body>
 
 </html>

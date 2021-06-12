@@ -8,11 +8,15 @@
     margin-right: 10px;
 }
 .colsm12 .row .col-sm-4 button {
-    background-color: gainsboro;
+   
     min-width: 100px;
     height: 100%;
     text-align: center;
     margin-top: 20px;
+    border: 2px solid gainsboro;
+}
+.colsm12 .row .col-sm-4 .active{
+    background-color: gainsboro;
 }
 
 .colsm12 .col-sm-8 .row .col-sm-3 {
@@ -101,7 +105,7 @@ Cart
     width: 100%;
     height: 100%;
     transition: all 0.3s ease-in;
-    background: rgb(240,157,81,0,5);
+    background-color: rgb(240,157,81,0,5);
     z-index: 2;
   visibility: hidden;
 }
@@ -114,7 +118,7 @@ Cart
     overflow: scroll;
     background: #fff;
     z-index: 3;
-    background: rgb(231,226,221);
+    background-color: rgb(231,226,221);
     padding: 1.5rem;
     transition: all 0.3s ease-in;
     transform: translateX(100%);
@@ -176,6 +180,19 @@ Cart
     text-align: center;
 
 }
+.cart-footer .clear-cart{
+    background-color: #f09d51 !important;
+     width: 150px;
+    height: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+
+}
+.cart-footer .clear-cart:hover{
+    background-color: transparent !important;
+}
 @media screen  and (min-width:768px){
     .cart{
         width: 30vw;
@@ -204,9 +221,9 @@ Cart
     }
 }
 @media screen and (max-width:372px){
-    
-    
-    
- 
+    .colsm12 .row .col-sm-4 button {
+       min-width: 70px;
+    }
 
 }
+    
