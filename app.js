@@ -62,7 +62,7 @@ class UI {
                 </div>
               </div>
               <div class="d-flex mybutton">
-                <button  class="btn mt-2 btn-dark text-white mr-2">
+                <button data-id=${product.no}  class="btn mt-2 btn-dark text-white mr-2">
                   Details
                 </button>
                 <button data-id=${product.no} class="btn cart-btn-banner ml-auto mt-2 ">Add  Cart</button>
@@ -278,17 +278,41 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 //Filtering by class
 //Filtering by class
-$(document).ready(function() {
+// $(document).ready(function() {
 
-var $grid = $(".grid").isotope({
-  itemSelector: ".grid-item",
-});
+// var $grid = $(".grid").isotope({
+//   itemSelector: ".grid-item",
+// });
 
-// filter items on button click
-$(".button-group").on("click", "button", function () {
-  var filterValue = $(this).attr("data-filter");
-  console.log(filterValue);
+// // filter items on button click
+// $(".button-group").on("click", "button", function () {
+//   var filterValue = $(this).attr("data-filter");
+//  // console.log(filterValue);
 
-  $grid.isotope({ filter: filterValue });
-});
-});
+//   $grid.isotope({ filter: filterValue });
+// });
+// });
+
+//Second method
+const BtnsFilter = document.querySelectorAll('.btns-filter');
+const StoreProducts = document.querySelectorAll('.grid-item');
+
+for (i = 0; i< BtnsFilter.length; i++){
+  BtnsFilter[i].addEventListener('click',(e) =>{
+    e.preventDefault();
+    const filter = e.target.dataset.filter;
+    //console.log(filter);
+    StoreProducts.forEach((product) => {
+      if(filter == '*'){
+        product.style.display = "block";
+      }else{
+        if(product.classList.contains(filter)){
+          product.style.display = "block";
+
+        }else{
+          product.style.display = "none";
+        }
+      }
+    })
+  })
+}
